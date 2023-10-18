@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Template</title>
+    <link rel="icon" href="https://cedcommerce.com/qyfzwczVQQms/wp-content/uploads/2023/08/favicon.ico" sizes="32x32">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="flex flex--justifyBetween flex--alignCenter">
+                <div class="flex__item">
+                    <div class="logo dark-text">Presento</div>
+                    <button id="btn-hamburger" style="display: none;"
+                        class="btn btn--icon btn--thick btn--primary btn-hamburger"><i class='bx bx-menu'></i></button>
+                </div>
+                <div class="flex__item">
+                    <div class="flex flex--alignCenter flex-gap--extraLoose">
+                        <div class="flex__item menu-container">
+                            <nav>
+                                <ul class="navigation list--styleNone ">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li class="navigation__item--hasDropdown">
+                                        <a href="#"><span>Dropdown</span>
+                                            <span class="chevron chevron--down"></span></a>
+                                        <ul class="dropdown dropdown--bottom list--styleNone">
+                                            <li><a href="#">Dropdown 1</a></li>
+                                            <li><a href="#">Dropdown 2</a></li>
+                                            <li class="navigation__item--hasDropdown">
+                                                <a href="#">
+                                                    <span>Dropdown 3</span>
+                                                    <span class="chevron chevron--right"></span>
+                                                </a>
+                                                <ul class="dropdown dropdown--right list--styleNone">
+                                                    <li><a href="#">Dropdown 3.1</a></li>
+                                                    <li><a href="#">Dropdown 3.2</a></li>
+                                                    <li class="navigation__item--hasDropdown">
+                                                        <a href="#">
+                                                            <span>Dropdown 3.3</span>
+                                                            <span class="chevron chevron--right"></span>
+                                                        </a>
+                                                        <ul class="dropdown dropdown--right list--styleNone">
+                                                            <li><a href="#">Dropdown 3.3.1</a></li>
+                                                            <li><a href="#">Dropdown 3.3.2</a></li>
+                                                            <li><a href="#">Dropdown 3.3.3</a></li>
+                                                            <li><a href="#">Dropdown 3.3.4</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">Dropdown 3.4</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Dropdown 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Contact</a></li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="flex__item">
+                            <div class="flex flex--alignCenter">
+                                <div class="flex__item">
+                                    <button class="btn btn--primary btn--thin">Get Started</button>
+                                </div>
+                                <div class="flex__item">
+                                    <button id="theme-switcher" class="btn btn--icon btn--primary">
+                                        <i class='bx bx-sun  animate-circle'></i>
+                                        <i style="display: none;" class='bx bx-moon' style='color:#ffffff'></i>
+                                    </button>
+                                </div>
+                                <div class="flex__item">
+                                    <div class="btn btn--icon btn--primary" id="theme-swicther">
+                                        <input type="color" id="colorPicker">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End-->
+    <!-- Aside Start -->
+    <aside style="display: none;">
+        <div class="mobile-logo">
+            <div class="logo dark-text">Presento</div>
+        </div>
+        <nav>
+            <ul class="navigation list--styleNone ">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li class="navigation__item--hasDropdown">
+                    <a href="#"><span>Dropdown</span>
+                        <span class="chevron chevron--down"></span></a>
+                    <ul class="dropdown dropdown--bottom list--styleNone">
+                        <li><a href="#">Dropdown 1</a></li>
+                        <li><a href="#">Dropdown 2</a></li>
+                        <li><a href="#">Dropdown 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </nav>
+    </aside>
+    <div id="aside-overlay" class="aside-overlay"></div>
+    <!-- Aside End -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hersection o" class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1>Bettter digital experience with Presento</h1>
+                    <h2>We are team of talented designers making websites with Bootstrap</h2>
+                    <button class="btn btn--primary btn--thick">Get Started</button>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section -->
+        <section class="section partners">
+            <div class="container">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img width="100%" src="assets/images/client-2.png" alt="partners">
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="assets/images/client-3.png" alt="partners">
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="assets/images/client-4.png" alt="partners">
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="assets/images/client-5.png" alt="partners">
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="assets/images/client-6.png" alt="partners">
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="assets/images/client-6.png" alt="partners">
+                    </div>
+                    <div class="item">
+                        <img width="100%" src="assets/images/client-6.png" alt="partners">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+        <!-- About Us Start -->
+        <section class="section about-us  section-bg">
+            <div class="container">
+                <div class="flex flex--wrap">
+                    <div class="flex__item flex__item--40 flex__item--M100">
+                        <div class="about-us__textContainer">
+                            <h3>Voluptatem dignissimos provident quasi</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                            <button class="btn btn--thick btn--ghost btn--rounded">ABOUT US</button>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--60 flex__item--M100">
+                        <div class="flex flex--wrap">
+                            <div class="flex__item flex__item--50 flex__item--M100">
+                                <div class="icon-box">
+                                    <i class='bx bx-receipt'></i>
+                                    <h4>Corporis voluptates sit</h4>
+                                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
+                                        aliquip
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex__item flex__item--50 flex__item--M100">
+                                <div class="icon-box">
+                                    <i class='bx bx-cube-alt'></i>
+                                    <h4>Corporis voluptates sit</h4>
+                                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
+                                        aliquip
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex__item flex__item--50 flex__item--M100">
+                                <div class="icon-box">
+                                    <i class='bx bx-cube-alt'></i>
+                                    <h4>Corporis voluptates sit</h4>
+                                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
+                                        aliquip
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex__item flex__item--50 flex__item--M100">
+                                <div class="icon-box">
+                                    <i class='bx bx-cube-alt'></i>
+                                    <h4>Corporis voluptates sit</h4>
+                                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
+                                        aliquip
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Us end -->
+
+        <!-- Counters design start -->
+        <section class="section counters">
+            <div class="container">
+                <div class="flex flex--wrap">
+                    <div class="flex__item flex__item--25 flex__item--M50 flex__item--SM100">
+                        <div class="box-counter">
+                            <div class="box-counter__count">
+                                <i class='bx bx-smile'></i>
+                            </div>
+                            <strong>52</strong>
+                            <p>Happy Clinets</p>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--25 flex__item--M50 flex__item--SM100">
+                        <div class="box-counter">
+                            <div class="box-counter__count">
+                                <i class='bx bx-smile'></i>
+                            </div>
+                            <strong>52</strong>
+                            <p>Happy Clinets</p>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--25 flex__item--M50 flex__item--SM100">
+                        <div class="box-counter">
+                            <div class="box-counter__count">
+                                <i class='bx bx-smile'></i>
+                            </div>
+                            <strong>52</strong>
+                            <p>Happy Clinets</p>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--25 flex__item--M50 flex__item--SM100">
+                        <div class="box-counter">
+                            <div class="box-counter__count">
+                                <i class='bx bx-smile'></i>
+                            </div>
+                            <strong>52</strong>
+                            <p>Happy Clinets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Counters Design end -->
+
+        <!-- Tabs Design start -->
+        <section class="section tabs">
+            <div class="container">
+                <div class="flex flex--wrap">
+                    <div class="flex__item flex__item--25 flex__item--M50">
+                        <a class="active tab-button" onclick="showTab('tab1')" href="javascript:void(0)">
+                            <i class='bx bx-alarm-snooze'></i>
+                            <span>Unde praesenti mara setra le</span>
+                        </a>
+                    </div>
+                    <div class="flex__item flex__item--25 flex__item--M50">
+                        <a class="tab-button" onclick="showTab('tab2')" href="javascript:void(0)">
+                            <i class='bx bx-alarm-snooze'></i>
+                            <span>Unde praesenti mara setra le</span>
+                        </a>
+                    </div>
+                    <div class="flex__item flex__item--25 flex__item--M50">
+                        <a class="tab-button" onclick="showTab('tab3')" href="javascript:void(0)">
+                            <i class='bx bx-alarm-snooze'></i>
+                            <span>Unde praesenti mara setra le</span>
+                        </a>
+                    </div>
+                    <div class="flex__item flex__item--25 flex__item--M50">
+                        <a class="tab-button" onclick="showTab('tab4')" href="javascript:void(0)">
+                            <i class='bx bx-alarm-snooze'></i>
+                            <span>Unde praesenti mara setra le</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="tabs__container">
+                    <div id="tab1" class="tab-content active">
+                        <div class="flex flex--wrap">
+                            <div class="flex__item flex__item--50 flex__item--M100">
+                                <div class="tabs-content dark-text">
+                                    <h3>First dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                                    <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</i>
+                                    <ul class="list--styleNone">
+                                        <li><i class='bx bx-check-double'></i> Ullamco laboris nisi ut aliquip ex ea
+                                            commodo
+                                            consequat.</li>
+                                        <li> <i class='bx bx-check-double'></i> Ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat.</li>
+                                        <li> <i class='bx bx-check-double'></i> Ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat.</li>
+                                    </ul>
+                                    <p>reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                                        pariatur.</p>
+                                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt
+                                        mollit anim id est laborum</p>
+                                </div>
+                            </div>
+                            <div class="flex__item flex__item--50 flex__item--M100">
+                                <img width="100%"
+                                    src="https://bootstrapmade.com/demo/templates/Presento/assets/img/tabs-1.jpg"
+                                    alt="tabs image">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-content">
+                        <div class="flex flex--wrap">
+                            <div class="flex__item flex__item--50 flex__item--M100">
+                                <div class="tabs-content dark-text">
+                                    <h3>Second Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
+                                    </h3>
+                                    <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</i>
+                                    <ul class="list--styleNone">
+                                        <li><i class='bx bx-check-double'></i> Ullamco laboris nisi ut aliquip ex ea
+                                            commodo
+                                            consequat.</li>
+                                        <li> <i class='bx bx-check-double'></i> Ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat.</li>
+                                        <li> <i class='bx bx-check-double'></i> Ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat.</li>
+                                    </ul>
+                                    <p>reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                                        pariatur.</p>
+                                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt
+                                        mollit anim id est laborum</p>
+                                </div>
+                            </div>
+                            <div class="flex__item flex__item--50 flex__item--M100">
+                                <img width="100%"
+                                    src="https://bootstrapmade.com/demo/templates/Presento/assets/img/tabs-1.jpg"
+                                    alt="tabs image">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab-content">
+                        <div class="flex flex--wrap">
+                            <div class="flex__item flex__item--50 flex__item--M100">
+                                <div class="tabs-content dark-text">
+                                    <h3>Third dollar Voluptatem dignissimos provident quasi corporis voluptates sit
+                                        assumenda.</h3>
+                                    <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</i>
+                                    <ul class="list--styleNone">
+                                        <li><i class='bx bx-check-double'></i> Ullamco laboris nisi ut aliquip ex ea
+                                            commodo
+                                            consequat.</li>
+                                        <li> <i class='bx bx-check-double'></i> Ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat.</li>
+                                        <li> <i class='bx bx-check-double'></i> Ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat.</li>
+                                    </ul>
+                                    <p>reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                                        pariatur.</p>
+                                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt
+                                        mollit anim id est laborum</p>
+                                </div>
+                            </div>
+                            <div class="flex__item flex__item--50 flex__item--M100">
+                                <img width="100%"
+                                    src="https://bootstrapmade.com/demo/templates/Presento/assets/img/tabs-1.jpg"
+                                    alt="tabs image">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab4" class="tab-content">
+                        <div class="flex flex--wrap">
+                            <div class="flex__item flex__item--50 flex__item--M100">
+                                <div class="tabs-content dark-text">
+                                    <h3> Fourth Voluptatem dignissimos provident quasi corporis voluptates sit
+                                        assumenda.
+                                    </h3>
+                                    <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</i>
+                                    <ul class="list--styleNone">
+                                        <li><i class='bx bx-check-double'></i> Ullamco laboris nisi ut aliquip ex ea
+                                            commodo
+                                            consequat.</li>
+                                        <li> <i class='bx bx-check-double'></i> Ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat.</li>
+                                        <li> <i class='bx bx-check-double'></i> Ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat.</li>
+                                    </ul>
+                                    <p>reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                                        pariatur.</p>
+                                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt
+                                        mollit anim id est laborum</p>
+                                </div>
+                            </div>
+                            <div class="flex__item flex__item--50 flex__item--M100">
+                                <img width="100%"
+                                    src="https://bootstrapmade.com/demo/templates/Presento/assets/img/tabs-1.jpg"
+                                    alt="tabs image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tabs design end -->
+
+        <!-- Services Design Start -->
+        <section class="section services section-bg">
+            <div class="container">
+                <div class="flex flex--justifyCenter">
+                    <div class="flex__item">
+                        <div class="section__header">
+                            <h2>SERVICES</h2>
+                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                                quidem.
+                                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                                suscipit
+                                alias ea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex--wrap">
+                    <div class="flex__item flex__item--50 flex__item--SM100">
+                        <div class="services__card">
+                            <div class="services__card-Icon">
+                                <i class='bx bxs-package'></i>
+                            </div>
+                            <div class="services__card-text">
+                                <h4>Lorem Ispum</h4>
+                                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati cupiditate non provident</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--50 flex__item--SM100">
+                        <div class="services__card">
+                            <div class="services__card-Icon">
+                                <i class='bx bxs-package'></i>
+                            </div>
+                            <div class="services__card-text">
+                                <h4>Lorem Ispum</h4>
+                                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati cupiditate non provident</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--50 flex__item--SM100">
+                        <div class="services__card">
+                            <div class="services__card-Icon">
+                                <i class='bx bxs-package'></i>
+                            </div>
+                            <div class="services__card-text">
+                                <h4>Lorem Ispum</h4>
+                                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati cupiditate non provident</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--50 flex__item--SM100">
+                        <div class="services__card">
+                            <div class="services__card-Icon">
+                                <i class='bx bxs-package'></i>
+                            </div>
+                            <div class="services__card-text">
+                                <h4>Lorem Ispum</h4>
+                                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati cupiditate non provident</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Design End -->
+
+        <!-- Portfolio Design Start -->
+        <section class="section portfolio">
+            <div class="container">
+                <div class="flex flex--justifyCenter">
+                    <div class="flex__item">
+                        <div class="section__header dark-text">
+                            <h2>PORTFOLIO</h2>
+                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                                quidem.
+                                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                                suscipit
+                                alias ea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex--justifyCenter">
+                    <div class="flex__item">
+                        <ul class="horizontal-tabs list--styleNone">
+                            <li data-filter="*" class="active"><a href="#">ALL</a></li>
+                            <li data-filter=".filter-app"><a href="#">APP</a></li>
+                            <li data-filter=".filter-card"><a href="#">CARD</a></li>
+                            <li data-filter=".filter-web"><a href="#">WEB</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex--wrap flex--justifyCenter">
+                    <div class="flex__item flex__item--33 flex__item--M50 filter-app">
+                        <div class="portfolio-card">
+                            <img width="100%"
+                                src="https://bootstrapmade.com/demo/templates/Presento/assets/img/portfolio/portfolio-1.jpg"
+                                alt="portfolio img">
+                            <div class="portfolio-card__text">
+                                <h5>APP 1</h5>
+                                <div class="portfolio-card__innerLink light-text">
+                                    <a href="#"><i class='bx bx-plus'></i></a>
+                                    <a href="#"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--33 flex__item--M50 filter-app">
+                        <div class="portfolio-card">
+                            <img width="100%"
+                                src="https://bootstrapmade.com/demo/templates/Presento/assets/img/portfolio/portfolio-1.jpg"
+                                alt="portfolio img">
+                            <div class="portfolio-card__text">
+                                <h5>APP 1</h5>
+                                <div class="portfolio-card__innerLink light-text">
+                                    <a href="#"><i class='bx bx-plus'></i></a>
+                                    <a href="#"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--33 flex__item--M50 filter-app">
+                        <div class="portfolio-card">
+                            <img width="100%"
+                                src="https://bootstrapmade.com/demo/templates/Presento/assets/img/portfolio/portfolio-1.jpg"
+                                alt="portfolio img">
+                            <div class="portfolio-card__text">
+                                <h5>APP 1</h5>
+                                <div class="portfolio-card__innerLink light-text">
+                                    <a href="#"><i class='bx bx-plus'></i></a>
+                                    <a href="#"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--33 flex__item--M50 filter-app">
+                        <div class="portfolio-card">
+                            <img width="100%"
+                                src="https://bootstrapmade.com/demo/templates/Presento/assets/img/portfolio/portfolio-1.jpg"
+                                alt="portfolio img">
+                            <div class="portfolio-card__text">
+                                <h5>APP 1</h5>
+                                <div class="portfolio-card__innerLink light-text">
+                                    <a href="#"><i class='bx bx-plus'></i></a>
+                                    <a href="#"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--33 flex__item--M50 filter-app">
+                        <div class="portfolio-card">
+                            <img width="100%"
+                                src="https://bootstrapmade.com/demo/templates/Presento/assets/img/portfolio/portfolio-1.jpg"
+                                alt="portfolio img">
+                            <div class="portfolio-card__text">
+                                <h5>APP 1</h5>
+                                <div class="portfolio-card__innerLink light-text">
+                                    <a href="#"><i class='bx bx-plus'></i></a>
+                                    <a href="#"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--33 flex__item--M50 filter-app">
+                        <div class="portfolio-card">
+                            <img width="100%"
+                                src="https://bootstrapmade.com/demo/templates/Presento/assets/img/portfolio/portfolio-1.jpg"
+                                alt="portfolio img">
+                            <div class="portfolio-card__text">
+                                <h5>APP 1</h5>
+                                <div class="portfolio-card__innerLink light-text">
+                                    <a href="#"><i class='bx bx-plus'></i></a>
+                                    <a href="#"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Design End -->
+
+        <!-- Testimonials Desifn Start -->
+        <section class="section testimonials dark-text">
+            <div class="container">
+                <div class="flex flex--justifyCenter">
+                    <div class="flex__item">
+                        <div class="section__header">
+                            <h2>TESTIMONIALS</h2>
+                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                                quidem.
+                                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                                suscipit
+                                alias ea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="textimonial-box">
+                            <div class="testimonial-header">
+                                <img src="https://bootstrapmade.com/demo/templates/Presento/assets/img/testimonials/testimonials-5.jpg"
+                                    alt="client Image">
+                                <div class="testimonial-header__text">
+                                    <h3>Jon Doe</h3>
+                                    <h4>Director</h4>
+                                </div>
+                            </div>
+                            <div class="testimonial-quote">
+                                <p> <i class='bx bxs-quote-alt-left'></i> Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Labore, molestias ipsam nemo ad
+                                    similique dolorem dolores, nisi incidunt odit quod deleniti perspiciatis quis
+                                    architecto
+                                    et harum ipsa alias qui nostrum. <i class='bx bxs-quote-alt-right'></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonials Design End -->
+
+        <!-- Pricing Section Design Start -->
+        <section class="section pricing section-bg">
+            <div class="container">
+                <div class="flex flex--justifyCenter">
+                    <div class="flex__item">
+                        <div class="section__header">
+                            <h2>PRICING</h2>
+                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                                quidem.
+                                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                                suscipit
+                                alias ea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex--wrap">
+                    <div class="flex__item flex__item--33 flex__item--M100">
+                        <div class="pricing-box">
+                            <div class="pricing-box__header">
+                                <h3>FREE</h3>
+                            </div>
+                            <div class="pricing-box__content">
+                                <h3><sup>$</sup> 0 <span>/month</span></h3>
+                                <ul class="list--styleNone">
+                                    <li>Hello Feature</li>
+                                    <li>Hello Feature</li>
+                                    <li>Hello Feature</li>
+                                    <li class="text-strike">Hello Feature</li>
+                                    <li class="text-strike">Hello Feature</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-box__action">
+                                <button class="btn btn--outlined btn--thick">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--33 flex__item--M100">
+                        <div class="pricing-box bg--primary">
+                            <div class="pricing-box__header">
+                                <h3>FREE</h3>
+                            </div>
+                            <div class="pricing-box__content">
+                                <h3><sup>$</sup> 0 <span>/month</span></h3>
+                                <ul class="list--styleNone">
+                                    <li>Hello Feature</li>
+                                    <li>Hello Feature</li>
+                                    <li>Hello Feature</li>
+                                    <li class="text-strike">Hello Feature</li>
+                                    <li class="text-strike">Hello Feature</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-box__action">
+                                <button class="btn btn--outlined btn--thick">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--33 flex__item--M100">
+                        <div class="pricing-box">
+                            <div class="pricing-box__header">
+                                <h3>FREE</h3>
+                            </div>
+                            <div class="pricing-box__content">
+                                <h3><sup>$</sup> 0 <span>/month</span></h3>
+                                <ul class="list--styleNone">
+                                    <li>Hello Feature</li>
+                                    <li>Hello Feature</li>
+                                    <li>Hello Feature</li>
+                                    <li class="text-strike">Hello Feature</li>
+                                    <li class="text-strike">Hello Feature</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-box__action">
+                                <button class="btn btn--outlined btn--thick">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing Section design end -->
+
+        <!-- FAQ Design Start -->
+        <section class="section faqs dark-text">
+            <div class="container">
+                <div class="flex flex--justifyCenter">
+                    <div class="flex__item">
+                        <div class="section__header">
+                            <h2>FREQUENTLY ASKED QUESTIONS</h2>
+                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                                quidem.
+                                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                                suscipit
+                                alias ea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <div class="accordion__item-header">
+                            <h5>Non consectetur a erat nam at lectus urna duis?</h5>
+                            <span class="chevron chevron--down"></span>
+                        </div>
+                        <div class="accordion__item-content">
+                            <div class="accordion__item-contentInner">
+                                <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
+                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                                    purus non.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__item-header">
+                            <h5>Non consectetur a erat nam at lectus urna duis?</h5>
+                            <span class="chevron chevron--down"></span>
+                        </div>
+                        <div class="accordion__item-content">
+                            <div class="accordion__item-contentInner">
+                                <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
+                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                                    purus non.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__item-header">
+                            <h5>Non consectetur a erat nam at lectus urna duis?</h5>
+                            <span class="chevron chevron--down"></span>
+                        </div>
+                        <div class="accordion__item-content">
+                            <div class="accordion__item-contentInner">
+                                <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
+                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                                    purus non.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Design End -->
+
+        <!-- Team Design Start -->
+        <section class="section team section-bg">
+            <div class="container">
+                <div class="flex flex--justifyCenter">
+                    <div class="flex__item">
+                        <div class="section__header">
+                            <h2>TEAM</h2>
+                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                                quidem.
+                                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                                suscipit
+                                alias ea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex--wrap">
+                    <div class="flex__item flex__item--25 flex__item--M50 flex__item--SM100">
+                        <div class="team-card">
+                            <div class="team-card__media">
+                                <img width="100%"
+                                    src="https://bootstrapmade.com/demo/templates/Presento/assets/img/team/team-1.jpg"
+                                    alt="Team Member">
+                                <div class="team-card__social">
+                                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                                </div>
+                            </div>
+                            <div class="team-card__content">
+                                <h4>Jon Doe</h4>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--25 flex__item--M50 flex__item--SM100">
+                        <div class="team-card">
+                            <div class="team-card__media">
+                                <img width="100%"
+                                    src="https://bootstrapmade.com/demo/templates/Presento/assets/img/team/team-1.jpg"
+                                    alt="Team Member">
+                                <div class="team-card__social">
+                                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                                </div>
+                            </div>
+                            <div class="team-card__content">
+                                <h4>Jon Doe</h4>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--25 flex__item--M50 flex__item--SM100">
+                        <div class="team-card">
+                            <div class="team-card__media">
+                                <img width="100%"
+                                    src="https://bootstrapmade.com/demo/templates/Presento/assets/img/team/team-4.jpg"
+                                    alt="Team Member">
+                                <div class="team-card__social">
+                                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                                </div>
+                            </div>
+                            <div class="team-card__content">
+                                <h4>Jon Doe</h4>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--25 flex__item--M50 flex__item--SM100">
+                        <div class="team-card">
+                            <div class="team-card__media">
+                                <img width="100%"
+                                    src="https://bootstrapmade.com/demo/templates/Presento/assets/img/team/team-4.jpg"
+                                    alt="Team Member">
+                                <div class="team-card__social">
+                                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                                </div>
+                            </div>
+                            <div class="team-card__content">
+                                <h4>Jon Doe</h4>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team Design End -->
+
+        <!-- Contact section starts -->
+        <section class="section contact dark-text">
+            <div class="container">
+                <div class="flex flex--justifyCenter">
+                    <div class="flex__item">
+                        <div class="section__header">
+                            <h2>CONTACT</h2>
+                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                                quidem.
+                                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                                suscipit
+                                alias ea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex--wrap">
+                    <div class="flex__item flex__item--50 flex__item--M100">
+                        <div class="flex flex--wrap">
+                            <div class="flex__item flex__item--100">
+                                <div class="contact-card">
+                                    <i class='bx bx-location-plus'></i>
+                                    <h4>Our Address</h4>
+                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                </div>
+                            </div>
+                            <div class="flex__item flex__item--50 flex__item--M100">
+                                <div class="contact-card">
+                                    <i class='bx bx-envelope'></i>
+                                    <h4>Email Us</h4>
+                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                </div>
+                            </div>
+                            <div class="flex__item flex__item--50 flex__item--M100">
+                                <div class="contact-card">
+                                    <i class='bx bx-phone'></i>
+                                    <h4>Call Us</h4>
+                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__item flex__item--50 flex__item--M100">
+                        <div class="contact-card">
+                            <form>
+                                <div class="flex flex--wrap">
+                                    <div class="flex__item flex__item--50 flex__item--M100">
+                                        <input type="text" placeholder="Your Name" />
+                                    </div>
+                                    <div class="flex__item flex__item--50 flex__item--M100">
+                                        <input type="email" placeholder="Your Email" />
+                                    </div>
+                                    <div class="flex__item flex__item--100">
+                                        <input type="text" placeholder="Subject" />
+                                    </div>
+                                    <div class="flex__item flex__item--100">
+                                        <textarea placeholder="Message" rows="7"></textarea>
+                                    </div>
+                                    <div class="flex__item flex__item--100">
+                                        <button class="btn btn--primary btn--thick">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section ends -->
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="flex flex--wrap">
+                <div class="flex__item flex__item--70 flex__item--M100">
+                    <div class="flex flex--wrap">
+                        <div class="flex__item flex__item--33 flex__item--M100">
+                            <div class="footer__item">
+                                <h4 >Presento</h4>
+                                <p>A108 Adam Street
+                                    New York, NY 535022
+                                    United States</p>
+                                <div>
+                                    <p>
+                                        <strong>Phone:</strong><span>123233432434</span>
+                                    </p>
+                                    <p>
+                                        <strong>Email:</strong><span>name@gmail.com</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex__item  flex__item--33 flex__item--M100">
+                            <div class="footer__item">
+                                <h5>Useful Links</h5>
+                                <ul class="list--styleNone">
+                                    <li><a href="#"><span class="chevron chevron--right"></span><span>Home</span></a></li>
+                                    <li><a href="#"><span class="chevron chevron--right"></span><span>Home</span></a></li>
+                                    <li><a href="#"><span class="chevron chevron--right"></span><span>Home</span></a></li>
+                                    <li><a href="#"><span class="chevron chevron--right"></span><span>Home</span></a></li>
+                                    <li><a href="#"><span class="chevron chevron--right"></span><span>Terms of service</span></a></li>
+                                    <li><a href="#"><span class="chevron chevron--right"></span><span>Home</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex__item  flex__item--33 flex__item--M100">
+                            <div class="footer__item">
+                                <h5>Our Services</h5>
+                                <ul class="list--styleNone">
+                                    <li><a href="#"><span class="chevron chevron--right"></span><span>Home</span></a></li>
+                                    <li><a href="#"><span class="chevron chevron--right"></span><span>Home</span></a></li>
+                                    <li><a href="#"><span class="chevron chevron--right"></span><span>Home</span></a></li>
+                                    <li><a href="#"><span class="chevron chevron--right"></span><span>Home</span></a></li>
+                                    <li><a href="#"><span class="chevron chevron--right"></span><span>Home</span></a></li>
+                                    <li><a href="#"><span class="chevron chevron--right"></span><span>Home</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex__item flex__item--30 flex__item--M100">
+                    <div class="footer__item footer__itemNewsletter">
+                        <h5>Join Our Newsletter</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe animi dicta a ipsam sequi, at cupiditate aliquam reprehenderit dolorem exercitationem magni quaerat itaque mollitia delectus vitae molestias nesciunt. Omnis, consectetur.</p>
+                        <div class="input-group">
+                            <input type="text" placeholder="Enter Email">
+                            <button class="btn btn--primary btn--thin">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="flex flex--justifyBetween">
+                    <div class="flex__item">
+                        <p>@copy; Copyright <strong>Presento</strong>. All Rights Reserved</p>
+                        <p>Designed By <a href="#">BootstrapMade</a></p>
+                    </div>
+                    <div class="flex__item">
+                        <div class="flex">
+                            <div class="flex__item">
+                                <a class="btn btn--icon btn--primary" href="#">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                            </div>
+                            <div class="flex__item">
+                                <a class="btn btn--icon btn--primary" href="#">
+                                    <i class='bx bxl-twitter' ></i>
+                                </a>
+                            </div>
+                            <div class="flex__item">
+                                <a class="btn btn--icon btn--primary" href="#">
+                                    <i class='bx bxl-instagram' ></i>
+                                </a>
+                            </div>
+                            <div class="flex__item">
+                                <a class="btn btn--icon btn--primary" href="#">
+                                    <i class='bx bxl-skype' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button id="btn-scrollTop" class="btn btn--icon btn--thick btn--primary btn-fixed"><i
+            class='bx bx-up-arrow-alt'></i></button>
+    <span id="follower" class="follower"></span>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
