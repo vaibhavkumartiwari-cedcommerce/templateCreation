@@ -121,19 +121,19 @@ window.addEventListener("scroll", function () {
 
 
 // Mouse Follower
-const follower = document.querySelector('.follower');
-const aTags = document.querySelectorAll('a, button ,.accordion__item-header,#theme-swicther');
-document.addEventListener('mousemove', (e) => {
-    follower.style.left = e.clientX - 10 + 'px';
-    follower.style.top = e.clientY - 10 + 'px';
-    const isCursorOverA = Array.from(aTags).some((a) => {
-        const aRect = a.getBoundingClientRect();
-        return e.clientX >= aRect.left && e.clientX <= aRect.right &&
-            e.clientY >= aRect.top && e.clientY <= aRect.bottom;
-    });
-    isCursorOverA ? follower.classList.add('highlighted') : follower.classList.remove('highlighted');
+// const follower = document.querySelector('.follower');
+// const aTags = document.querySelectorAll('a, button ,.accordion__item-header,#theme-swicther');
+// document.addEventListener('mousemove', (e) => {
+//     follower.style.left = e.clientX - 10 + 'px';
+//     follower.style.top = e.clientY - 10 + 'px';
+//     const isCursorOverA = Array.from(aTags).some((a) => {
+//         const aRect = a.getBoundingClientRect();
+//         return e.clientX >= aRect.left && e.clientX <= aRect.right &&
+//             e.clientY >= aRect.top && e.clientY <= aRect.bottom;
+//     });
+//     isCursorOverA ? follower.classList.add('highlighted') : follower.classList.remove('highlighted');
 
-});
+// });
 
 
 // Tabs
@@ -158,11 +158,11 @@ for (let i = 0; i < tabButtons.length; i++) {
 showTab('tab1', tabButtons[0]);
 
 // Theme changer
-const colorPicker = document.getElementById('colorPicker');
-colorPicker.addEventListener('input', function () {
-    const selectedColor = colorPicker.value;
-    document.documentElement.style.setProperty('--primary-color', selectedColor);
-});
+// const colorPicker = document.getElementById('colorPicker');
+// colorPicker.addEventListener('input', function () {
+//     const selectedColor = colorPicker.value;
+//     document.documentElement.style.setProperty('--primary-color', selectedColor);
+// });
 
 
 // JQUERY CODE

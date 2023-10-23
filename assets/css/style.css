@@ -261,6 +261,9 @@ body {
     font-family: 'Raleway';
 }
 
+a{
+    text-decoration: none;
+}
 .section {
     padding: 6rem 0;
 }
@@ -337,9 +340,9 @@ body {
     text-decoration: line-through;
 }
 
-.animate-circle {
+/* .animate-circle {
     animation: circular 4s linear infinite;
-}
+} */
 
 .btn-fixed {
     position: fixed;
@@ -391,9 +394,9 @@ body {
 
 /* Variables declaration */
 :root {
-    --primary-color: #E0413C;
+    --primary-color: #0E4E5E;
     --text-light: #ffffff;
-    --text-dark: #444444;
+    --text-dark: #1A2F36;
     --text-gray: #848484;
     --bg-dark: #252525;
     --bg-light: #ffffff;
@@ -728,9 +731,12 @@ aside .navigation li a.active .chevron {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: #fff url(https://bootstrapmade.com/demo/templates/Presento/assets/img/hero-bg.jpg) no-repeat 0 0;
+    background: #fff url(https://images.unsplash.com/photo-1697297937792-ec7c0adf6c16?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1032) no-repeat 0 0;
     position: relative;
     padding-top: 8rem;
+    /* object-fit: cover; */
+    background-position: center;
+    background-size: cover;
 }
 
 .hero:after {
